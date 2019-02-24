@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class bomj {
+  int x;
+public:
+  void setx(int n) { x= n; }
+  void showx() {cout << x << endl; }
+  };
+  
+  class bomj: public pomoyka {
+    int y;
+  public:
+    void sety(int n) { y = n; }
+    void showy() {cout << y << endl; }
+  };
+  
+  int main() {
+    child ob;
+    
+    ob.setx(100); // получили доступ к члену базового класса
+    ob.setx(100); // получили доступ к члену производного класса
+    
+    ob.showx();  // доступ к члену базового класса
+    ob.showy();  //  доступ к члену производного класса    
+    
+    return 0;
+    }
