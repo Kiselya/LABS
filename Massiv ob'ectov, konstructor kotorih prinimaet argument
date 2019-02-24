@@ -5,7 +5,7 @@ class demo {
  int a;
 public: 
  demo(int n) { a = n; }
- int get_a() {return a;}
+ int get_a() { return a;}
 };
 
 int main()
@@ -13,7 +13,6 @@ int main()
  demo ar[3] = {3,2,1};
  int i;
  
- for (i=0; i<3; i++) ar[i].set_a(i);
  for (i=0; i<3; i++) cout << ar[i].get_a() << "  ";
  cout << endl;
  
