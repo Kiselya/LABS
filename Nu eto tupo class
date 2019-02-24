@@ -4,12 +4,12 @@ using namespace std;
 const int SIZE = 26;
 
 class stack {
-char stck[SIZE]
-int tos;
+char stck[SIZE]; // Элементы стека
+int tos; // Вершина стека
 public:
-void init();
-void push(char ch);
-char pop();
+void init();  // Инициализация стека
+void push(char ch); // Добавить символ в стек
+char pop(); // Вытолкнуть символ из стека
 };
 
 void stack::init()
@@ -44,6 +44,7 @@ int main()
    s1.init();
    s2.init();
    
+   // Добавляем элементы в стеки
    s1.push('a');
       s2.push('b');
          s1.push('c');
@@ -51,6 +52,7 @@ int main()
                s1.push('e');
                   s2.push('f');
                   
+// Выводим содержимое стеков                  
 for (i=0; i<3; i++) cout << s1.pop() << "  ";
 cout << endl;
 for (i=0; i<3; i++) cout << s2.pop() << "  ";
